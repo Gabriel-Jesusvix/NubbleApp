@@ -1141,11 +1141,10 @@ PODS:
     - RNFBApp
   - RNPermissions (4.1.5):
     - React-Core
-  - RNScreens (3.37.0):
+  - RNScreens (3.30.1):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
-    - React-RCTImage
   - RNSVG (13.14.1):
     - React-Core
   - SocketRocket (0.6.1)
@@ -1428,7 +1427,7 @@ SPEC CHECKSUMS:
   RNFBApp: b67ded6e4b0a6c0fee5e4f8e75e3a31567949a08
   RNFBMessaging: 7202ad4c49bdcdc7fd3634d85827a6305049c148
   RNPermissions: 4da8c626e4ac9d71c1a199d500d52dd54da62e38
-  RNScreens: 0df9081bbc17690268fdeeb62017f48b4a8479f5
+  RNScreens: b6b64d956af3715adbfe84808694ae82d3fec74f
   RNSVG: af3907ac5d4fa26a862b75a16d8f15bc74f2ceda
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   VisionCamera: 36c460338692788a0d377dce7d32f8ba049fb4f2

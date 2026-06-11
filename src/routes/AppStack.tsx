@@ -52,9 +52,9 @@ interface Props {
   initialRouteName?: keyof AppStackParamList;
 }
 export function AppStack({initialRouteName = 'AppTabNavigator'}: Props) {
-  useSaveNotificationToken();
-  useNotificationAction();
-  usePermission('notification');
+  // useSaveNotificationToken();
+  // useNotificationAction();
+  // usePermission('notification');
 
   return (
     <Stack.Navigator
