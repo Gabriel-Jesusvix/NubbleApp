@@ -1,79 +1,138 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 Nubble App
 
-# Getting Started
+O Nubble App é um projeto desenvolvido em React Native com foco em arquitetura escalável, boas práticas de desenvolvimento mobile e integração com serviços modernos do ecossistema JavaScript/TypeScript.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Este projeto está sendo utilizado como ambiente de estudo e evolução profissional, permitindo a aplicação prática de conceitos avançados de desenvolvimento mobile, testes automatizados, gerenciamento de estado, arquitetura de software e integração contínua.
 
-## Step 1: Start the Metro Server
+Além de servir como laboratório para aprendizado, o objetivo é construir uma base sólida que represente padrões utilizados em aplicações reais de mercado.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+---
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 🚀 Objetivos do Projeto
 
-```bash
-# using npm
-npm start
+* Aprimorar conhecimentos em React Native.
+* Aplicar conceitos de Clean Architecture e SOLID.
+* Utilizar TypeScript em larga escala.
+* Desenvolver interfaces reutilizáveis e escaláveis.
+* Implementar testes automatizados.
+* Trabalhar com integração contínua (CI/CD).
+* Explorar integrações com câmera, notificações e armazenamento local.
+* Consolidar conhecimentos para desenvolvimento de aplicações mobile profissionais.
 
-# OR using Yarn
-yarn start
-```
+---
 
-## Step 2: Start your Application
+## 📸 Screenshots
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+|                               |                               |                               |                               |
+| :---------------------------: | :---------------------------: | :---------------------------: | :---------------------------: |
+| ![](docs/images/screen-1.png) | ![](docs/images/screen-2.png) | ![](docs/images/screen-3.png) | ![](docs/images/screen-4.png) |
+| ![](docs/images/screen-5.png) | ![](docs/images/screen-6.png) | ![](docs/images/screen-7.png) | ![](docs/images/screen-8.png) |
 
-### For Android
+---
 
-```bash
-# using npm
-npm run android
+## 🛠️ Tecnologias e Bibliotecas
 
-# OR using Yarn
-yarn android
-```
+### Mobile
 
-### For iOS
+* React Native CLI
+* TypeScript
+* React Navigation
+* React Native Vision Camera
+* React Native MMKV
+* React Native Permissions
+* React Native Firebase
+* React Native SVG
+* React Native Safe Area Context
 
-```bash
-# using npm
-npm run ios
+### Gerenciamento de Estado e Dados
 
-# OR using Yarn
-yarn ios
-```
+* Zustand
+* TanStack Query (React Query)
+* Axios
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### Formulários e Validação
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+* React Hook Form
+* Zod
 
-## Step 3: Modifying your App
+### UI e Design System
 
-Now that you have successfully run the app, let's modify it.
+* Shopify Restyle
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### Testes
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+* Jest
+* React Native Testing Library
 
-## Congratulations! :tada:
+### Qualidade de Código
 
-You've successfully run and modified your React Native App. :partying_face:
+* ESLint
+* Prettier
+* Husky
 
-### Now what?
+### DevOps
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+* GitHub Actions
+* Fastlane
 
-# Troubleshooting
+---
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## 🏗️ Arquitetura
 
-# Learn More
+O projeto segue uma arquitetura baseada em princípios de:
 
-To learn more about React Native, take a look at the following resources:
+* Clean Architecture
+* SOLID
+* Separation of Concerns
+* MVVM (Model-View-ViewModel)
+* Design Patterns
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+O objetivo é manter uma estrutura escalável, testável e de fácil manutenção.
+
+![](docs/images/nubble-arch.png)
+
+---
+
+## 📚 Aprendizados
+
+Este repositório é utilizado para documentar e praticar conceitos relacionados a:
+
+* Desenvolvimento Mobile Profissional
+* Arquitetura de Software
+* Testes Automatizados
+* Integração com APIs
+* Gerenciamento de Estado
+* Performance em React Native
+* CI/CD para aplicativos mobile
+* Publicação em lojas (Google Play e App Store)
+
+---
+
+## 🎯 Roadmap
+
+* [ ] Autenticação
+* [ ] Cadastro de usuários
+* [ ] Perfil
+* [ ] Upload de imagens
+* [ ] Integração com notificações push
+* [ ] Testes automatizados
+* [ ] Pipeline CI/CD
+* [ ] Publicação Android
+* [ ] Publicação iOS
+
+---
+
+## 👨‍💻 Autor
+
+**Gabriel J.**
+
+Desenvolvedor Mobile especializado em React Native, TypeScript e JavaScript.
+
+- [LinkedIn](https://www.linkedin.com/in/gabriel--jesus/en/)
+- [GitHub](https://github.com/Gabriel-Jesusvix)
+
+---
+
+## 📄 Licença
+
+Este projeto é destinado para estudos, aprendizado e evolução profissional.
