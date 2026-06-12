@@ -7,10 +7,10 @@ import {
 } from 'react-native';
 
 import {useAppTheme} from '@hooks';
-import {colors} from '@theme';
 
 import {Box, BoxProps} from '../Box/Box';
 import {$fontFamily, $fontSizes, Text} from '../Text/Text';
+import {colors} from '@theme';
 
 export interface TextInputProps extends RNTextInputProps {
   label?: string;
@@ -29,6 +29,7 @@ export function TextInput({
   containerProps,
   ...rnTextInputProps
 }: TextInputProps) {
+  // eslint-disable-next-line @typescript-eslint/no-shadow
   const {colors} = useAppTheme();
   const inputRef = useRef<RNTextInput>(null);
 

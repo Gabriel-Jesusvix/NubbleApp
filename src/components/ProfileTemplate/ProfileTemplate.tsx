@@ -86,5 +86,5 @@ export function ProfileTemplate({userId, isMyProfile}: Props) {
 const $screen: StyleProp<ViewStyle> = {
   paddingBottom: 0,
   paddingHorizontal: 0,
-  // flex: 1,
+  flex: 1,
 };

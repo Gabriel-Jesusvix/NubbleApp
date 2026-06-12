@@ -9,15 +9,9 @@ async function signIn(
   password: string,
 ): Promise<AuthCredentials> {
   try {
-    console.log('PASSO 1');
-
     const authCredentialsAPI = await authApi.signIn(email, password);
 
-    console.log('PASSO 2');
-
     const result = authAdapter.toAuthCredentials(authCredentialsAPI);
-
-    console.log('PASSO 3');
 
     return result;
   } catch (error) {

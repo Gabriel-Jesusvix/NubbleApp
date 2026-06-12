@@ -7,8 +7,16 @@ import {UpdateUserParams, User, UserDetails} from './userTypes';
 
 async function getById(id: number): Promise<UserDetails> {
   const userAPI = await userApi.getById(id.toString());
-  const {isFollowing} = await userApi.isFollowing(id.toString());
-  return userAdapter.toUserDetails(userAPI, isFollowing);
+
+  try {
+    const response = await userApi.isFollowing(id.toString());
+
+    return userAdapter.toUserDetails(userAPI, response.isFollowing);
+  } catch (error) {
+    console.log('FOLLOW ERROR', error);
+
+    return userAdapter.toUserDetails(userAPI, false);
+  }
 }
 
 async function searchUser(search: string): Promise<Page<User>> {
