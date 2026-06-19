@@ -66,5 +66,25 @@ jest.mock('@react-native-firebase/messaging', () => {
     onNotificationOpenedApp: jest.fn(),
   });
 });
+jest.mock('react-native-vision-camera', () => {
+  return {
+    Camera: {
+      getCameraPermissionStatus: jest.fn(),
+      requestCameraPermission: jest.fn(),
+      getMicrophonePermissionStatus: jest.fn(),
+      requestMicrophonePermission: jest.fn(),
+    },
+    Templates: {},
+    useCameraDevice: jest.fn(),
+    useCameraPermission: jest.fn(() => ({
+      hasPermission: true,
+      requestPermission: jest.fn(),
+    })),
+  };
+});
+
+jest.mock('@react-native-async-storage/async-storage', () =>
+  require('@react-native-async-storage/async-storage/jest/async-storage-mock'),
+);
 
 initializeStorage(inMemoryStorage);
