@@ -1,4 +1,4 @@
-package com.nubbleapp
+package br.com.gj.nubbleapp
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

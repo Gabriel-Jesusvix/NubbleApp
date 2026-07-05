@@ -1,4 +1,4 @@
-package com.nubbleapp
+package br.com.gj.nubbleapp
 
 import android.app.Application
 import com.facebook.react.PackageList

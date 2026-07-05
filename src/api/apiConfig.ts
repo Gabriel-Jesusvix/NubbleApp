@@ -6,7 +6,8 @@ import axios from 'axios';
  *
  * i.e: `'http://192.168.20.15:3333/'`
  */
-export const BASE_URL = 'http://localhost:3333/';
+// export const BASE_URL = 'http://localhost:3333/';
+export const BASE_URL = 'https://nubble-api.coffstack.com.br/';
 export const api = axios.create({
   baseURL: BASE_URL,
 });
