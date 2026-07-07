@@ -36,9 +36,6 @@ jobs:
       - name: Decode Google Service Account
         run: echo ${{ secrets.ANDROID_SERVICE_ACCOUNT_BASE64 }} | base64 -d > google-service-account.json
       
-      - name: Upload to Google Play
-        run: fastlane upload_internal
-
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
@@ -48,8 +45,12 @@ jobs:
           NUBBLE_STORE_PASSWORD: ${{ secrets.ANDROID_STORE_PASSWORD }}
           NUBBLE_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           NUBBLE_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+
+      - name: Upload to Google Play
+        run: fastlane upload_internal
+
       
-      - name: Upload APK to Artifact
+      - name: Upload AAB to Artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-release.aab
