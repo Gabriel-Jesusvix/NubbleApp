@@ -15,6 +15,9 @@ platform :ios, min_ios_version_supported
 use_modular_headers!
 prepare_react_native_project!
 
+use_frameworks! :linkage => :static
+ $RNFirebaseAsStaticFramework = true
+
 setup_permissions([
   'Camera',
  'PhotoLibrary', 

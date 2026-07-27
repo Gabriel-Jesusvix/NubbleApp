@@ -67,3 +67,5 @@ yarn-error.log
 *.jks
 
 google-service-account.json
+google-services.json
+GoogleService-Info.plist
